@@ -9,25 +9,26 @@
     <ol>
       <li> 빙고 세팅 </li>
       <p> 
+
+      </script>
       <div id='t_array'> </div>
       </p>
-    
-      <script type="text/javascript">
-      onload = function () {
+      <script>
+      function execute() {
         var items = [[1, 2, 2],
-                     [3, 4, 3],
-                     [5, 6, 0]];
-        var out = document.getElementsByTagName('t_array')[0];
+                        [3, 4, 3],
+                        [5, 6, 0]];
+        var out = document.getElementsByTagName('t_array');
         out.innerHTML = items;
-      };
+        out.innerHTML = "이건 나와?";
+        };
       </script>
-
       <li> 빙고 맞추기 </li>
       <p> 
       맞추기!
       </p>
       
     </ol>
-    <input type="button" id="hw" value="Hello world" />
+    <input type="button" id="hw" value="Show test result" onclick='execute();'/>
   </body>
 </html>
