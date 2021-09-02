@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title> 빙고 시뮬레이터 </title>
     <script type="text/javascript" src="test_script.js"></script>
   </head>
   <body>
-    Hello web!
+    <ol>
+      <li> 빙고 세팅 </li>
+      <p> 
+      <div id='t_array'> </div>
+      </p>
+    
+      <script type="text/javascript">
+      onload = function () {
+        var items = [[1, 2, 2],
+                     [3, 4, 3],
+                     [5, 6, 0]];
+        var out = document.getElementsByTagName('t_array')[0];
+        out.innerHTML = items;
+      };
+      </script>
+
+      <li> 빙고 맞추기 </li>
+      <p> 
+      맞추기!
+      </p>
+      
+    </ol>
     <input type="button" id="hw" value="Hello world" />
   </body>
 </html>
