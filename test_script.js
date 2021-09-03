@@ -1,9 +1,17 @@
-<script type="text/javascript">
-function execute() {
-  var items = [[1, 2, 2],
-                  [3, 4, 3],
-                  [5, 6, 0]];
-  var out = document.getElementsByTagName('t_array');
-  out.innerHTML = items;
-  out.innerHTML = "이건 나와?";
+// document.write()
+var items = [[1, 2, 2],
+             [3, 4, 3],
+             [5, 6, 0]];
+document.write("<table>");
+document.write("<thead>");
+document.write("<tbody>");
+document.write("<tr>");
+for(var i = 0; i < items.length ; i++){
+for(var j = 0; j < items[0].length; j++){
+  document.write("<td>"+ items[i][j] + "</td>");
+  <!--console.log(`${i} ${j} ${items[i][j]}`);-->
 };
+document.write("</tr>");
+};
+document.write("</thead>");
+document.write("</tbody>");
