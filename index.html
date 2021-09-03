@@ -12,6 +12,7 @@
 	  
       </p>
 
+
       <li> 빙고 맞추기 </li>
       <p> 
       맞추기!
@@ -20,5 +21,15 @@
     </ol>
   <script type="text/javascript" src="test_script.js"> </script>
   <script type="text/javascript" src="test_script2.js"> </script> 
+  <script type="text/javascript">
+    function update() {
+      var select = document.getElementById('table_skill');
+      var option = select.options[select.selectedIndex];
+      console.log(option);
+      console.log(option.value);
+      console.log(option.text);
+    };
+    update();
+  </script>
   </body>
 </html>

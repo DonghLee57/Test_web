@@ -1,19 +1,25 @@
 // document.getElementById()
 // Importing .js should be lower than <id> line in html.
 
-var items = [[1, 2, 2],
-             [3, 4, 3],
-             [5, 6, 0]];
-var out = ""
+var bar_select = ''
+bar_select += '<select type="text" list="skills" id="table_skill">';
+bar_select += '<datalist id="skills">';
+bar_select += '<option value="00">스킬1</option>';
+bar_select += '<option value="01">스킬2</option>';
+bar_select += '<option value="02">스킬3</option>';
+bar_select += '</datalist>';
+bar_select += '</select>';
+
+var out = "";
 out += "<table>";
 out += "<tr>";
 for(var i = 0; i < items.length ; i++){
 for(var j = 0; j < items[0].length; j++){
-  out += "<td>"+ items[i][j] + "</td>";
+  out += "<td>"+ bar_select + "</td>";
 };
 out += "</tr>";
 };
 out += "</thead>";
 out += "</tbody>";
-console.log(out);
+
 document.getElementById("setting").innerHTML = out;
